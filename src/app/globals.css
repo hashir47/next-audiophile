@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +24,132 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+@layer utilities {
+  h1 {
+    @apply uppercase ;
+    letter-spacing: 2px;
+    line-height: 58px;
+    font-size: 56px;
+    font-weight: bold;
+
+  }
+
+  h2 {
+    @apply uppercase;
+    letter-spacing: 1.5px;
+    line-height: 44px;
+    font-size: 40px;
+    font-weight: bold;
+
+  }
+
+  h3 {
+    @apply uppercase;
+    letter-spacing: 1.15px;
+    line-height: 36px;
+    font-size: 32px;
+    font-weight: bold;
+
+  }
+
+
+  h4 {
+    @apply uppercase;
+    letter-spacing: 2px;
+    line-height: 33px;
+    font-size: 28px;
+    font-weight: bold;
+
+  }
+  h5 {
+    @apply uppercase;
+    letter-spacing: 1.7px;
+    line-height: 33px;
+    font-size: 24px;
+    font-weight: bold;
+
+  }
+
+  h6 {
+    @apply uppercase;
+    letter-spacing: 1.3px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+
+ 
+
+  .overline {
+    @apply uppercase;
+    letter-spacing: 10px;
+    line-height: 19px;
+    font-size: 14px;
+    text-decoration: none;
+    /* color: #d87d4a; */
+  }
+
+  .subtitle {
+    @apply uppercase;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    /* color: #d87d4a; */
+  }
+
+ .dark-orange-btn{
+  @apply bg-dark-orange w-auto  flex flex-row justify-center items-center my-10 px-6 py-3 text-white
+ }
+
+
+ .dark-black-btn {
+   @apply bg-black w-auto  flex flex-row justify-center items-center my-10 px-6 py-3 text-white
+ } 
+
+
+    .transparent-btn {
+      @apply bg-transparent w-auto  flex flex-row justify-center items-center my-10 px-6 py-3 
+    }
+
+ 
+}
+ body {
+   line-height: 25px;
+   font-size: 15px;
+   font-weight: medium;
+   margin: 0;
+ }
+ .custom-padding {
+  padding: 40px 140px;
+ }
+
+  @media(min-width:768px){
+    .custom-padding {
+        padding: 40px 40px;
+      }
+  }
+  .custom-margin {
+    padding: 40px 140px;
+  }
+
+ .custom-margin-negative {
+  margin: -40px -140px;
+ }
+
+.overlay {
+  position: fixed;
+  /* or 'absolute' if you want it relative to a container */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* semi-transparent black background */
+  z-index: 40;
+  /* Ensure it's above other content, adjust as needed */
+  overflow: hidden;
+  ;
 }
