@@ -35,7 +35,7 @@ const Home: React.FC<pageProps> = ({ params }) => {
     productInfo = data.filter((product) => product.slug === "yx1-earphones");
   }
   return (
-    <main className="  w-full">
+    <main className="w-full">
       <div className="w-full h-80 bg-custom-dark text-white flex flex-row justify-center items-center">
         <h1 className="hidden md:flex">{params.name[0]}</h1>
         <h3 className="flex md:hidden">{params.name[0]}</h3>
@@ -44,7 +44,7 @@ const Home: React.FC<pageProps> = ({ params }) => {
       {productInfo && <CategoryPageBanner productInfo={productInfo} />}
 
       <ProductCards />
-      <div className="flex flex-col p-10 g:py-custom-y lg:px-custom-x  xl:py-custom-y-xl xl:px-custom-x-xl ">
+      <div className="flex flex-col p-10 g:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl">
         <BottomBanner />
       </div>
     </main>

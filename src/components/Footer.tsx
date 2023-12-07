@@ -4,8 +4,8 @@ const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <footer className="bg-custom-dark  p-10 lg:py-custom-y lg:px-custom-x  xl:py-custom-y-xl xl:px-custom-x-xl">
-      <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between  pb-10 text-white">
+    <footer className="bg-custom-dark p-10 lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl">
+      <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between pb-10 text-white">
         <ul>
           <li className="my-10 md:my-0">
             <img src="/assets/shared/desktop/logo.svg" />
@@ -35,7 +35,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="flex flex-row justify-between   pb-10  text-white">
+      <div className="flex flex-row justify-between pb-10 text-white">
         <ul>
           <li className="w-full lg:w-2/4">
             <p className="text-center md:text-start">
@@ -46,7 +46,7 @@ const Footer = () => {
             </p>
           </li>
         </ul>
-        <ul className="hidden lg:flex flex-row space-x-6 uppercase self-end  ">
+        <ul className="hidden lg:flex flex-row space-x-6 uppercase self-end">
           <li>
             <img src="/assets/shared/desktop/icon-facebook.svg" />
           </li>
@@ -58,7 +58,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col md:flex-row justify-between   pb-10  text-white">
+      <div className="flex flex-col md:flex-row justify-between pb-10 text-white">
         <ul>
           <li className="w-full lg:w-2/4">
             <p className="text-white text-center md:text-start">
@@ -66,7 +66,7 @@ const Footer = () => {
             </p>
           </li>
         </ul>
-        <ul className="flex lg:hidden flex-row space-x-6 uppercase self-center md:self-end   mt-10 md:mt-0">
+        <ul className="flex lg:hidden flex-row space-x-6 uppercase self-center md:self-end mt-10 md:mt-0">
           <li>
             <img src="/assets/shared/desktop/icon-facebook.svg" />
           </li>

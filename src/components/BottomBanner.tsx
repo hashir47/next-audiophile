@@ -1,24 +1,24 @@
 const BottomBanner = () => {
   return (
-    <ul className="flex flex-col lg:flex-row justify-center lg:justify-between items-center mt-72 md:mt-20  lg:h-[35rem] ">
+    <ul className="flex flex-col lg:flex-row justify-center lg:justify-between items-center mt-72 md:mt-20 lg:h-[35rem]">
       <li className="">
         <img
           src="/assets/shared/mobile/image-best-gear.jpg"
-          className="flex md:hidden rounded "
+          className="flex md:hidden rounded"
         />
 
         <img
           src="/assets/shared/tablet/image-best-gear.jpg"
-          className="hidden md:flex lg:hidden  rounded h-80"
+          className="hidden md:flex lg:hidden rounded h-80"
         />
 
         <img
           src="/assets/shared/desktop/image-best-gear.jpg"
-          className="hidden lg:flex rounded  "
+          className="hidden lg:flex rounded"
         />
       </li>
-      <li className="flex flex-col items-start justify-center  h-full p-10 md:p-24 lg:p-0 w-full lg:w-2/4">
-        <h2 className="text-black ">
+      <li className="flex flex-col items-start justify-center h-full p-10 md:p-24 lg:p-0 w-full lg:w-2/4">
+        <h2 className="text-black">
           Bringing you the <span className="text-dark-orange">best</span> audio
           gear
         </h2>

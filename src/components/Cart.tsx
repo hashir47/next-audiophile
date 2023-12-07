@@ -58,7 +58,7 @@ const Cart: React.FC<cartProps> = ({ isCartOpen, setIsCartOpen }) => {
     <>
       <div className="fixed inset-0 bg-black bg-opacity-50 z-10" />
 
-      <div className="absolute right-10 lg:right-[340px]  bg-white rounded-xl flex flex-col w-[78%]  md:w-96 min-h-[32rem] max-h-[32rem] p-4 z-20 overflow-auto">
+      <div className="absolute right-10 lg:right-[340px] bg-white rounded-xl flex flex-col w-[78%] md:w-96 min-h-[32rem] max-h-[32rem] p-4 z-20 overflow-auto">
         <XMarkIcon
           className="h-10 w-10 self-end mb-2"
           onClick={(e) => {
@@ -108,7 +108,7 @@ const Cart: React.FC<cartProps> = ({ isCartOpen, setIsCartOpen }) => {
           </ul>
 
           <button
-            className="dark-orange-btn hover:bg-light-orange "
+            className="dark-orange-btn hover:bg-light-orange"
             style={{ width: "100%", margin: "0" }}
             onClick={() => {
               console.log("clicked");

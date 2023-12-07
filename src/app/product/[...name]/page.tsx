@@ -70,8 +70,8 @@ const Home: React.FC<pageProps> = ({ params }) => {
     return <h1 className="text-center">Product Not found</h1>;
   }
   return (
-    <main className="  w-full mt-24 ">
-      <div className="p-10 lg:py-custom-y lg:px-custom-x  xl:py-custom-y-xl xl:px-custom-x-xl">
+    <main className="w-full mt-24">
+      <div className="p-10 lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl">
         <div className="flex flex-col md:flex-row justify-start md:justify-between">
           <ul className="w-full md:w-2/4">
             <img
@@ -90,7 +90,7 @@ const Home: React.FC<pageProps> = ({ params }) => {
               alt={productInfo.name}
             />
           </ul>
-          <ul className="flex flex-col justify-center items-start w-full md:w-2/4 ml-0 md:ml-24  mt-10 md:mt-0">
+          <ul className="flex flex-col justify-center items-start w-full md:w-2/4 ml-0 md:ml-24 mt-10 md:mt-0">
             <li>
               {" "}
               <p className="overline text-dark-orange">
@@ -108,7 +108,7 @@ const Home: React.FC<pageProps> = ({ params }) => {
               <h4 className="mb-5 lg:mb-10">$ {productInfo.price}</h4>
             </li>
             <li className="flex flex-row">
-              <ul className="flex flex-row justify-between items-center my-10 px-6 py-3 space-x-6 bg-dark-gray ">
+              <ul className="flex flex-row justify-between items-center my-10 px-6 py-3 space-x-6 bg-dark-gray">
                 <li>
                   <p>-</p>
                 </li>
@@ -122,7 +122,7 @@ const Home: React.FC<pageProps> = ({ params }) => {
               <ul>
                 <li>
                   {" "}
-                  <button className="dark-orange-btn self-auto text-white  font-medium ml-4">
+                  <button className="dark-orange-btn self-auto text-white font-medium ml-4">
                     Add to cart
                   </button>
                 </li>
@@ -140,14 +140,14 @@ const Home: React.FC<pageProps> = ({ params }) => {
               <p className="my-4">{productInfo.features}</p>
             </li>
           </ul>
-          <ul className="flex flex-col md:flex-row lg:flex-col w-full  lg:w-2/4 items-start lg:items-center ml-0 lg:ml-24">
+          <ul className="flex flex-col md:flex-row lg:flex-col w-full lg:w-2/4 items-start lg:items-center ml-0 lg:ml-24">
             <li className="w-full">
               <h2>In the box</h2>
             </li>
-            <li className="flex flex-col w-full ">
+            <li className="flex flex-col w-full">
               {productInfo.includes.map((item, index) => {
                 return (
-                  <ul key={item.item + "-" + index} className="my-1 ">
+                  <ul key={item.item + "-" + index} className="my-1">
                     <li>
                       <p className="text-start">
                         <span className="text-dark-orange font-bold mr-4">
@@ -163,8 +163,8 @@ const Home: React.FC<pageProps> = ({ params }) => {
           </ul>
         </div>
 
-        <div className="flex flex-col md:flex-row space-x-0 md:space-x-8 lg:space-x-14 my-10  ">
-          <ul className=" flex flex-col justify-between">
+        <div className="flex flex-col md:flex-row space-x-0 md:space-x-8 lg:space-x-14 my-10">
+          <ul className="flex flex-col justify-between">
             <li>
               <img
                 src={productInfo.gallery.first.mobile}
@@ -201,11 +201,11 @@ const Home: React.FC<pageProps> = ({ params }) => {
               />
             </li>
           </ul>
-          <ul className=" ">
+          <ul className="">
             <li>
               <img
                 src={productInfo.gallery.third.mobile}
-                className="flex md:hidden rounded-lg "
+                className="flex md:hidden rounded-lg"
                 alt={productInfo.name}
               />
               <img
@@ -223,13 +223,16 @@ const Home: React.FC<pageProps> = ({ params }) => {
         </div>
         <h3 className="text-center my-10">You may also like</h3>
         <div className="flex flex-col md:flex-row justify-between my-10 space-x-4">
-          {productInfo.others.map((relatedProduct) => {
+          {productInfo.others.map((relatedProduct, index) => {
             return (
-              <ul className="flex flex-col justify-center items-center">
+              <ul
+                className="flex flex-col justify-center items-center"
+                key={index + "-relatedProduct-" + relatedProduct.name}
+              >
                 <li>
                   <img
                     src={relatedProduct.image.mobile}
-                    className="flex md:hidden rounded-lg "
+                    className="flex md:hidden rounded-lg"
                     alt={relatedProduct.name}
                   />
                   <img
@@ -247,7 +250,7 @@ const Home: React.FC<pageProps> = ({ params }) => {
                   <h4>{relatedProduct.name}</h4>
                 </li>
                 <li>
-                  <button className="dark-orange-btn self-auto text-white  font-medium hover:bg-light-orange ">
+                  <button className="dark-orange-btn self-auto text-white font-medium hover:bg-light-orange">
                     <Link href={`/product/${relatedProduct.slug}`}>
                       SEE PRODUCT{" "}
                     </Link>
@@ -259,7 +262,7 @@ const Home: React.FC<pageProps> = ({ params }) => {
         </div>
       </div>
       <ProductCardsNav />
-      <div className="p-10 lg:py-custom-y lg:px-custom-x  xl:py-custom-y-xl xl:px-custom-x-xl -mt-64 md:mt-0 ">
+      <div className="p-10 lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl -mt-64 md:mt-0">
         <BottomBanner />
       </div>
     </main>

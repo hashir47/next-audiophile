@@ -71,13 +71,13 @@ const Home: React.FC = () => {
     open();
   };
   return (
-    <main className="  w-full bg-dark-gray-gray  bg-checkout-grey">
-      <div className="p-10 lg:py-custom-y lg:px-custom-x  xl:py-custom-y-xl xl:px-custom-x-xl flex flex-col lg:flex-row justify-between">
+    <main className=" w-full bg-dark-gray-gray bg-checkout-grey">
+      <div className="p-10 lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl flex flex-col lg:flex-row justify-between">
         <div className="w-full lg:w-3/5 flex flex-col bg-white p-10 rounded">
           <h2 className="my-10">Checkout</h2>
           <form onSubmit={handleSubmit(onSubmit)} id="input-form">
             <p className="subtitle text-dark-orange">Billing details</p>
-            <div className="flex flex-col md:flex-row justify-between  w-full">
+            <div className="flex flex-col md:flex-row justify-between w-full">
               <div className="flex flex-col w-full md:w-2/4">
                 <label htmlFor="email" className="font-bold">
                   Email:
@@ -93,13 +93,13 @@ const Home: React.FC = () => {
                 )}
               </div>
 
-              <div className="flex flex-col  w-full md:w-2/4 ml-0 md:ml-4">
+              <div className="flex flex-col w-full md:w-2/4 ml-0 md:ml-4">
                 <label htmlFor="name" className="font-bold">
                   Name:
                 </label>
                 <input
                   {...register("name", { required: true })}
-                  className="border-darker-gray border px-2 py-2 rounded  w-full"
+                  className="border-darker-gray border px-2 py-2 rounded w-full"
                   placeholder="Enter name"
                 />
 
@@ -138,7 +138,7 @@ const Home: React.FC = () => {
                 <span className="text-red-500">Address is required</span>
               )}
             </div>
-            <div className="flex flex-col md:flex-row justify-between  w-full mt-4">
+            <div className="flex flex-col md:flex-row justify-between w-full mt-4">
               <div className="flex flex-col w-full md:w-2/4">
                 <label htmlFor="zipCode" className="font-bold">
                   ZIP Code:
@@ -160,7 +160,7 @@ const Home: React.FC = () => {
                 </label>
                 <input
                   {...register("city", { required: true })}
-                  className="border-darker-gray border px-2 py-2 rounded  w-full"
+                  className="border-darker-gray border px-2 py-2 rounded w-full"
                   placeholder="Enter city"
                 />
 
@@ -185,16 +185,16 @@ const Home: React.FC = () => {
             </div>
 
             <p className="subtitle text-dark-orange mt-10">Payment details</p>
-            <div className="flex flex-col md:flex-row justify-between  w-full mt-4 ">
+            <div className="flex flex-col md:flex-row justify-between w-full mt-4">
               <div className="flex flex-col w-full md:w-2/4">
                 <p className="font-bold">Payment Method</p>
               </div>
 
               <div className="flex flex-col w-full md:w-2/4 ml-0 md:ml-4">
-                <div className="flex flex-row px-2 py-2 border border-darker-gray rounded ">
+                <div className="flex flex-row px-2 py-2 border border-darker-gray rounded">
                   <input
                     {...register("paymentMethod", { required: true })}
-                    className="  accent-dark-orange "
+                    className="accent-dark-orange"
                     placeholder="Enter city"
                     type="radio"
                     value="eMoney"
@@ -207,7 +207,7 @@ const Home: React.FC = () => {
                 <div className="flex flex-row px-2 py-2 border border-darker-gray rounded mt-3">
                   <input
                     {...register("paymentMethod", { required: true })}
-                    className="  form-radio accent-dark-orange "
+                    className="  form-radio accent-dark-orange"
                     placeholder="Enter city"
                     type="radio"
                     value="cashOnDelivery"
@@ -248,7 +248,7 @@ const Home: React.FC = () => {
                       <p>${item.price}</p>
                     </div>
                   </div>
-                  <div className="flex items-center  text-sm">
+                  <div className="flex items-center text-sm">
                     <p className="font-bold">x{item.quantity}</p>
                   </div>
                 </div>

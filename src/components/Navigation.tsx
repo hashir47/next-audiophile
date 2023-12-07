@@ -10,10 +10,10 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [isCartOpen, setIsCartOpen] = useState<boolean>(false);
   return (
-    <header className="bg-custom-dark   lg:py-custom-y lg:px-custom-x  xl:py-custom-y-xl xl:px-custom-x-xl w-full z-50">
+    <header className="bg-custom-dark lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl w-full z-50">
       {/* <nav className="flex flex-row justify-between border-0 lg:border-b-[1px]  p-10 border-dark-gray text-white "> */}
-      <nav className="flex flex-row justify-between p-10  text-white ">
-        <ul className="flex lg:hidden ">
+      <nav className="flex flex-row justify-between p-10 text-white">
+        <ul className="flex lg:hidden">
           <li>
             {isMenuOpen ? (
               <XMarkIcon
@@ -39,7 +39,7 @@ const Navigation = () => {
             <img src="/assets/shared/desktop/logo.svg" />
           </li>
         </ul>
-        <ul className=" flex-row space-x-6 uppercase hidden lg:flex">
+        <ul className="flex-row space-x-6 uppercase hidden lg:flex">
           <li>
             <Link href="/" className="hover:text-dark-orange">
               Home

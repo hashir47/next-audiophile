@@ -5,9 +5,9 @@ import bestAudioGear from "../../../public/assets/shared/desktop/image-best-gear
 import BottomBanner from "../BottomBanner";
 const Banners = () => {
   return (
-    <div className="flex flex-col p-10 lg:py-custom-y lg:px-custom-x  xl:py-custom-y-xl xl:px-custom-x-xl ">
+    <div className="flex flex-col p-10 lg:py-custom-y lg:px-custom-x  xl:py-custom-y-xl xl:px-custom-x-xl">
       <ul
-        className="bg-dark-orange flex flex-col lg:flex-row items-center justify-center p-10 md:p-0 lg:space-x-24 h-full lg:h-[35rem] rounded w-full "
+        className="bg-dark-orange flex flex-col lg:flex-row items-center justify-center p-10 md:p-0 lg:space-x-24 h-full lg:h-[35rem] rounded w-full"
         style={{
           backgroundImage: `url(${patternCircles.src})`,
           backgroundRepeat: "no-repeat",
@@ -31,7 +31,7 @@ const Banners = () => {
           />
 
           <img
-            className="flex md:hidden "
+            className="flex md:hidden"
             src="assets/home/mobile/image-speaker-zx9.png"
             alt="speaker-zx9"
           />
@@ -42,7 +42,7 @@ const Banners = () => {
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
-          <button className="dark-black-btn ">SEE PRODUCT</button>
+          <button className="dark-black-btn">SEE PRODUCT</button>
         </li>
       </ul>
 
@@ -79,11 +79,11 @@ const Banners = () => {
         </li>
       </ul>
 
-      <ul className="flex flex-col md:flex-row justify-between mt-20 h-48 md:h-80 ">
+      <ul className="flex flex-col md:flex-row justify-between mt-20 h-48 md:h-80">
         <li>
           <img
             src="assets/home/mobile/image-earphones-yx1.jpg"
-            className="flex md:hidden rounded "
+            className="flex md:hidden rounded"
           />
           <img
             src="assets/home/tablet/image-earphones-yx1.jpg"
@@ -91,7 +91,7 @@ const Banners = () => {
           />
           <img
             src="assets/home/desktop/image-earphones-yx1.jpg"
-            className="hidden lg:flex rounded h-80 "
+            className="hidden lg:flex rounded h-80"
           />
         </li>
         <li className="flex flex-col items-start justify-center h-48 md:h-80 p-10 lg:p-24 bg-dark-gray w-full md:w-80 lg:w-[33rem]  mt-10 md:mt-0">
