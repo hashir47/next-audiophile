@@ -53,9 +53,19 @@ const cartItems: cartItems[] = [
 type cartProps = {
   isCartOpen: boolean;
   setIsCartOpen: (arg0: boolean) => void;
+  isMenuOpen: boolean;
+  setIsMenuOpen: (arg0: boolean) => void;
 };
-const Cart: React.FC<cartProps> = ({ isCartOpen, setIsCartOpen }) => {
+const Cart: React.FC<cartProps> = ({
+  isCartOpen,
+  setIsCartOpen,
+  isMenuOpen,
+  setIsMenuOpen,
+}) => {
   const router = useRouter();
+  if (isCartOpen) {
+    setIsMenuOpen(false);
+  }
   return (
     <>
       <div className="fixed inset-0 bg-black bg-opacity-50 z-10" />

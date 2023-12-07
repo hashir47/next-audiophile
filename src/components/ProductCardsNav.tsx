@@ -1,11 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
 type category = {
   name: string;
   url: string;
 }[];
-
+type cardProps = {
+  isCartOpen: boolean;
+  setIsCartOpen: (arg0: boolean) => void;
+  isMenuOpen: boolean;
+  setIsMenuOpen: (arg0: boolean) => void;
+};
 const categories = [
   {
     name: "Headphones",
@@ -20,7 +26,12 @@ const categories = [
     url: "/assets/home/desktop/earphone1x.png",
   },
 ] as category;
-const ProductCardsNav = () => {
+const ProductCardsNav: React.FC<cardProps> = ({
+  isMenuOpen,
+  setIsMenuOpen,
+  isCartOpen,
+  setIsCartOpen,
+}) => {
   return (
     <div className="flex flex-col md:flex-row justify-between mt-12 p-10 lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl">
       {categories.map((category, index) => {
@@ -57,7 +68,15 @@ const ProductCardsNav = () => {
             <li className="self-center mb-10">
               <div className="flex flex-row items-center">
                 <p className="text-darker-gray subtitle">
-                  <Link href={`/category/${category.name}`}>SHOP</Link>
+                  <Link
+                    href={`/category/${category.name}`}
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setIsCartOpen(false);
+                    }}
+                  >
+                    SHOP
+                  </Link>
                 </p>{" "}
                 <img
                   src="/assets/shared/desktop/icon-arrow-right.svg"

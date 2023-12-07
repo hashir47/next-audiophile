@@ -88,13 +88,23 @@ const Navigation = () => {
       {isMenuOpen && (
         <div className="bg-white pt-16 ">
           <div className=" overflow-y-auto">
-            <ProductCardsNav />
+            <ProductCardsNav
+              isCartOpen={isCartOpen}
+              setIsCartOpen={setIsCartOpen}
+              setIsMenuOpen={setIsMenuOpen}
+              isMenuOpen={isMenuOpen}
+            />
           </div>
         </div>
       )}
 
       {isCartOpen && (
-        <Cart isCartOpen={isCartOpen} setIsCartOpen={setIsCartOpen} />
+        <Cart
+          isCartOpen={isCartOpen}
+          setIsCartOpen={setIsCartOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          isMenuOpen={isMenuOpen}
+        />
       )}
     </header>
   );
