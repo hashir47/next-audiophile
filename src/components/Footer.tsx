@@ -41,9 +41,9 @@ const Footer = () => {
           <li className="w-full lg:w-2/4">
             <p className="text-center md:text-start">
               Audiophile is an all in one stop to fulfill your audio needs.
-              We're a small team of music lovers and sound specialists who are
-              devoted to helping you get the most out of personal audio. Come
-              and visit our demo facility - we’re open 7 days a week.
+              We&apos;re a small team of music lovers and sound specialists who
+              are devoted to helping you get the most out of personal audio.
+              Come and visit our demo facility - we&apos;re open 7 days a week.
             </p>
           </li>
         </ul>
