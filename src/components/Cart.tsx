@@ -1,7 +1,7 @@
 "use client";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
-
+import { useRouter } from "next/navigation";
 type cartItems = {
   name: string;
   price: number;
@@ -28,24 +28,24 @@ const cartItems: cartItems[] = [
     quantity: 4,
     image: "/assets/cart/image-yx1-earphones.jpg",
   },
-  {
-    name: "XX99 MK II",
-    price: 2999,
-    quantity: 4,
-    image: "/assets/cart/image-xx99-mark-two-headphones.jpg",
-  },
-  {
-    name: "ZX 9",
-    price: 4999,
-    quantity: 2,
-    image: "/assets/cart/image-zx9-speaker.jpg",
-  },
-  {
-    name: "YX 1",
-    price: 999,
-    quantity: 4,
-    image: "/assets/cart/image-yx1-earphones.jpg",
-  },
+  // {
+  //   name: "XX99 MK II",
+  //   price: 2999,
+  //   quantity: 4,
+  //   image: "/assets/cart/image-xx99-mark-two-headphones.jpg",
+  // },
+  // {
+  //   name: "ZX 9",
+  //   price: 4999,
+  //   quantity: 2,
+  //   image: "/assets/cart/image-zx9-speaker.jpg",
+  // },
+  // {
+  //   name: "YX 1",
+  //   price: 999,
+  //   quantity: 4,
+  //   image: "/assets/cart/image-yx1-earphones.jpg",
+  // },
 ];
 
 type cartProps = {
@@ -53,6 +53,7 @@ type cartProps = {
   setIsCartOpen: (arg0: boolean) => void;
 };
 const Cart: React.FC<cartProps> = ({ isCartOpen, setIsCartOpen }) => {
+  const router = useRouter();
   return (
     <>
       <div className="fixed inset-0 bg-black bg-opacity-50 z-10" />
@@ -105,11 +106,17 @@ const Cart: React.FC<cartProps> = ({ isCartOpen, setIsCartOpen }) => {
               <p className="font-bold">$ 8,997</p>
             </li>
           </ul>
+
           <button
             className="dark-orange-btn hover:bg-light-orange "
             style={{ width: "100%", margin: "0" }}
+            onClick={() => {
+              console.log("clicked");
+              setIsCartOpen(!isCartOpen);
+              router.push("/checkout");
+            }}
           >
-            <Link href="/checkout">CHECKOUT</Link>
+            CHECKOUT
           </button>
         </div>
       </div>

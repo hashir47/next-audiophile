@@ -19,7 +19,8 @@ const config: Config = {
         'dark-gray':'#f1f1f1',
         'light-gray':'#f1f1f1',
         'custom-dark':'#191919',
-        'darker-gray':'#adadad'
+        'darker-gray':'#adadad',
+        'checkout-grey':'#f5f5f5'
       },
       padding:{
         'custom-padding':'40px 140px'
@@ -32,6 +33,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+
+   
+
+  ],
 }
 export default config

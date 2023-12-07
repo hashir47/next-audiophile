@@ -5,7 +5,8 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
 import Navigation from "../components/Navigation";
-
+import "@mantine/core/styles.css";
+import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 const manrope = Manrope({ subsets: ["latin"] });
 //const Navigation = dynamic(() => import("../components/Navigation"), {
 // ssr: false,
@@ -23,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={manrope.className}>
-        <Navigation />
-        {children}
-        <Footer />
+        <MantineProvider>
+          <Navigation />
+          {children}
+          <Footer />
+        </MantineProvider>
       </body>
     </html>
   );
