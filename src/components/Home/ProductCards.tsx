@@ -55,9 +55,10 @@ const ProductCards = () => {
                 <p className="text-darker-gray subtitle">
                   <Link href={`/category/${category.name}`}>SHOP</Link>
                 </p>{" "}
-                <img
+                <Image
                   src="/assets/shared/desktop/icon-arrow-right.svg"
                   className="ml-4 w-3 h-3"
+                  alt="arrow-right"
                 />
               </div>
             </li>

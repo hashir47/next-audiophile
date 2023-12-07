@@ -59,17 +59,20 @@ const Banners = () => {
         // }}
       >
         <li>
-          <img
+          <Image
             src="/assets/home/mobile/image-speaker-zx7.jpg"
             className="flex md:hidden "
+            alt="zx7-speaker"
           />
-          <img
+          <Image
             src="/assets/home/tablet/image-speaker-zx7.jpg"
             className="hidden md:flex lg:hidden w-screen"
+            alt="zx7-speaker"
           />
-          <img
+          <Image
             src="/assets/home/desktop/image-speaker-zx7.jpg"
             className="hidden lg:flex h-80 w-screen"
+            alt="zx7-speaker"
           />
         </li>
         <li className="flex flex-col items-start justify-center w-full  h-full p-4 lg:p-24 absolute">
@@ -86,14 +89,17 @@ const Banners = () => {
           <Image
             src="assets/home/mobile/image-earphones-yx1.jpg"
             className="flex md:hidden rounded"
+            alt="yx1 earphones"
           />
           <Image
             src="assets/home/tablet/image-earphones-yx1.jpg"
             className="hidden md:flex lg:hidden  rounded h-80"
+            alt="yx1 earphones"
           />
           <Image
             src="assets/home/desktop/image-earphones-yx1.jpg"
             className="hidden lg:flex rounded h-80"
+            alt="yx1 earphones"
           />
         </li>
         <li className="flex flex-col items-start justify-center h-48 md:h-80 p-10 lg:p-24 bg-dark-gray w-full md:w-80 lg:w-[33rem]  mt-10 md:mt-0">
