@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between pb-10 text-white">
         <ul>
           <li className="my-10 md:my-0">
-            <img src="/assets/shared/desktop/logo.svg" />
+            <Image src="/assets/shared/desktop/logo.svg" alt="logo" />
           </li>
         </ul>
         <ul className="flex flex-col md:flex-row space-x-0 space-y-4 md:space-y-0 md:space-x-6 uppercase items-center">
