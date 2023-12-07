@@ -20,19 +20,19 @@ const Banners = () => {
           <img src="assets/home/desktop/pattern-circles.svg" alt="Circle" />
         </li> */}
         <li className="self-center lg:self-start my-10 lg:my-0">
-          <Image
+          <img
             className="hidden lg:flex"
             src="assets/home/desktop/speakerMainHome.png"
             alt="speaker-zx9"
           />
 
-          <Image
+          <img
             className="hidden md:flex lg:hidden"
             src="assets/home/tablet/image-speaker-zx9.png"
             alt="speaker-zx9"
           />
 
-          <Image
+          <img
             className="flex md:hidden"
             src="assets/home/mobile/image-speaker-zx9.png"
             alt="speaker-zx9"
@@ -59,17 +59,17 @@ const Banners = () => {
         // }}
       >
         <li>
-          <Image
+          <img
             src="/assets/home/mobile/image-speaker-zx7.jpg"
             className="flex md:hidden "
             alt="zx7-speaker"
           />
-          <Image
+          <img
             src="/assets/home/tablet/image-speaker-zx7.jpg"
             className="hidden md:flex lg:hidden w-screen"
             alt="zx7-speaker"
           />
-          <Image
+          <img
             src="/assets/home/desktop/image-speaker-zx7.jpg"
             className="hidden lg:flex h-80 w-screen"
             alt="zx7-speaker"
@@ -86,17 +86,17 @@ const Banners = () => {
 
       <ul className="flex flex-col md:flex-row justify-between mt-20 h-48 md:h-80">
         <li>
-          <Image
+          <img
             src="assets/home/mobile/image-earphones-yx1.jpg"
             className="flex md:hidden rounded"
             alt="yx1 earphones"
           />
-          <Image
+          <img
             src="assets/home/tablet/image-earphones-yx1.jpg"
             className="hidden md:flex lg:hidden  rounded h-80"
             alt="yx1 earphones"
           />
-          <Image
+          <img
             src="assets/home/desktop/image-earphones-yx1.jpg"
             className="hidden lg:flex rounded h-80"
             alt="yx1 earphones"

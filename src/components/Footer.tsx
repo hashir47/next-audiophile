@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between pb-10 text-white">
         <ul>
           <li className="my-10 md:my-0">
-            <Image src="/assets/shared/desktop/logo.svg" alt="logo" />
+            <img src="/assets/shared/desktop/logo.svg" alt="logo" />
           </li>
         </ul>
         <ul className="flex flex-col md:flex-row space-x-0 space-y-4 md:space-y-0 md:space-x-6 uppercase items-center">
@@ -49,22 +49,19 @@ const Footer = () => {
         </ul>
         <ul className="hidden lg:flex flex-row space-x-6 uppercase self-end">
           <li>
-            <Image
+            <img
               src="/assets/shared/desktop/icon-facebook.svg"
               alt="facebook"
             />
           </li>
           <li>
-            <Image
+            <img
               src="/assets/shared/desktop/icon-instagram.svg"
               alt="instagram"
             />
           </li>
           <li>
-            <Image
-              src="/assets/shared/desktop/icon-twitter.svg"
-              alt="twitter"
-            />
+            <img src="/assets/shared/desktop/icon-twitter.svg" alt="twitter" />
           </li>
         </ul>
       </div>
@@ -78,22 +75,19 @@ const Footer = () => {
         </ul>
         <ul className="flex lg:hidden flex-row space-x-6 uppercase self-center md:self-end mt-10 md:mt-0">
           <li>
-            <Image
+            <img
               src="/assets/shared/desktop/icon-facebook.svg"
               alt="facebook"
             />
           </li>
           <li>
-            <Image
+            <img
               src="/assets/shared/desktop/icon-instagram.svg"
               alt="instagram"
             />
           </li>
           <li>
-            <Image
-              src="/assets/shared/desktop/icon-twitter.svg"
-              alt="twitter"
-            />
+            <img src="/assets/shared/desktop/icon-twitter.svg" alt="twitter" />
           </li>
         </ul>
       </div>

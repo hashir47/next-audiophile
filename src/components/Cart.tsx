@@ -82,7 +82,7 @@ const Cart: React.FC<cartProps> = ({ isCartOpen, setIsCartOpen }) => {
               key={`cart-item-${index}`}
               className="flex items-center justify-between my-4"
             >
-              <Image
+              <img
                 className="h-12 md:h-16 w-12 md:w-16"
                 src={item.image}
                 alt={item.name}

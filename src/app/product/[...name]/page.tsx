@@ -76,17 +76,17 @@ const Home: React.FC<pageProps> = ({ params }) => {
       <div className="p-10 lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl">
         <div className="flex flex-col md:flex-row justify-start md:justify-between">
           <ul className="w-full md:w-2/4">
-            <Image
+            <img
               src={productInfo.image.mobile}
               className="flex md:hidden"
               alt={productInfo.name}
             />
-            <Image
+            <img
               src={productInfo.image.tablet}
               className="hidden md:flex lg:hidden"
               alt={productInfo.name}
             />
-            <Image
+            <img
               src={productInfo.image.desktop}
               className="hidden lg:flex"
               alt={productInfo.name}
@@ -168,17 +168,17 @@ const Home: React.FC<pageProps> = ({ params }) => {
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-8 lg:space-x-14 my-10">
           <ul className="flex flex-col justify-between">
             <li>
-              <Image
+              <img
                 src={productInfo.gallery.first.mobile}
                 className="flex md:hidden rounded-lg"
                 alt={productInfo.name}
               />
-              <Image
+              <img
                 src={productInfo.gallery.first.tablet}
                 className="hidden md:flex lg:hidden rounded-lg"
                 alt={productInfo.name}
               />
-              <Image
+              <img
                 src={productInfo.gallery.first.desktop}
                 className="hidden lg:flex rounded-lg"
                 alt={productInfo.name}
@@ -186,17 +186,17 @@ const Home: React.FC<pageProps> = ({ params }) => {
             </li>
 
             <li className="my-4 md:my-0">
-              <Image
+              <img
                 src={productInfo.gallery.second.mobile}
                 className="flex md:hidden rounded-lg"
                 alt={productInfo.name}
               />
-              <Image
+              <img
                 src={productInfo.gallery.second.tablet}
                 className="hidden md:flex lg:hidden rounded-lg"
                 alt={productInfo.name}
               />
-              <Image
+              <img
                 src={productInfo.gallery.second.desktop}
                 className="hidden lg:flex rounded-lg"
                 alt={productInfo.name}
@@ -205,17 +205,17 @@ const Home: React.FC<pageProps> = ({ params }) => {
           </ul>
           <ul className="">
             <li>
-              <Image
+              <img
                 src={productInfo.gallery.third.mobile}
                 className="flex md:hidden rounded-lg"
                 alt={productInfo.name}
               />
-              <Image
+              <img
                 src={productInfo.gallery.third.tablet}
                 className="hidden md:flex lg:hidden rounded-lg"
                 alt={productInfo.name}
               />
-              <Image
+              <img
                 src={productInfo.gallery.third.desktop}
                 className="hidden lg:flex rounded-lg"
                 alt={productInfo.name}
@@ -232,17 +232,17 @@ const Home: React.FC<pageProps> = ({ params }) => {
                 key={index + "-relatedProduct-" + relatedProduct.name}
               >
                 <li>
-                  <Image
+                  <img
                     src={relatedProduct.image.mobile}
                     className="flex md:hidden rounded-lg"
                     alt={relatedProduct.name}
                   />
-                  <Image
+                  <img
                     src={relatedProduct.image.tablet}
                     className="hidden md:flex lg:hidden rounded-lg"
                     alt={relatedProduct.name}
                   />
-                  <Image
+                  <img
                     src={relatedProduct.image.desktop}
                     className="hidden lg:flex rounded-lg"
                     alt={relatedProduct.name}

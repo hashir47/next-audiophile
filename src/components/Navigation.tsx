@@ -37,7 +37,7 @@ const Navigation = () => {
         </ul>
         <ul>
           <li>
-            <Image src="/assets/shared/desktop/logo.svg" alt="audiophile" />
+            <img src="/assets/shared/desktop/logo.svg" alt="audiophile" />
           </li>
         </ul>
         <ul className="flex-row space-x-6 uppercase hidden lg:flex">
@@ -68,7 +68,7 @@ const Navigation = () => {
 
         <ul>
           <li>
-            <Image
+            <img
               className="cursor-pointer"
               src="/assets/shared/desktop/icon-cart.svg"
               onClick={(e) => {

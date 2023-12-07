@@ -4,18 +4,18 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="flex flex-row bg-custom-dark text-white w-full p-0 lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl">
-      <Image
+      <img
         src="assets/home/desktop/image-hero.jpg"
         className="hidden lg:flex"
         alt="Headphones"
       />
-      <Image
+      <img
         src="assets/home/tablet/image-header.jpg"
         className="hidden md:flex lg:hidden"
         alt="hero banner"
       />
 
-      <Image
+      <img
         src="assets/home/mobile/image-header.jpg"
         className="flex md:hidden"
         alt="hero banner"

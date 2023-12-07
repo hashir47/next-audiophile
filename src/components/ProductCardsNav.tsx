@@ -36,12 +36,12 @@ const ProductCardsNav = () => {
                 alt={category.name}
               /> */}
 
-              <Image
+              <img
                 src={category.url}
                 className="absolute -top-20 md:-top-20 lg:-top-16"
                 alt={category.name}
               />
-              <Image
+              <img
                 src="/assets/home/desktop/Oval.png"
                 className="mt-10"
                 alt="oval shadow"
@@ -55,7 +55,7 @@ const ProductCardsNav = () => {
                 <p className="text-darker-gray subtitle">
                   <Link href={`/category/${category.name}`}>SHOP</Link>
                 </p>{" "}
-                <Image
+                <img
                   src="/assets/shared/desktop/icon-arrow-right.svg"
                   className="ml-4 w-3 h-3"
                   alt="right-arrow"

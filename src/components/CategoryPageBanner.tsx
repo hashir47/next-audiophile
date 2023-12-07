@@ -25,17 +25,17 @@ const CategoryPageBanner: React.FC<productInfoProps> = ({ productInfo }) => {
         >
           <ul className="w-full lg:h-auto lg:w-2/4">
             <li>
-              <Image
+              <img
                 src={product.image.mobile}
                 className="flex md:hidden w-screen"
                 alt={product.name}
               />
-              <Image
+              <img
                 src={product.image.tablet}
                 className="hidden md:flex lg:hidden w-screen"
                 alt={product.name}
               />
-              <Image
+              <img
                 src={product.image.desktop}
                 className="hidden lg:flex"
                 alt={product.name}
@@ -74,12 +74,12 @@ const CategoryPageBanner: React.FC<productInfoProps> = ({ productInfo }) => {
       >
         <ul className="w-full flex lg:hidden">
           <li>
-            <Image
+            <img
               alt={product.name}
               src={product.image.mobile}
               className="flex md:hidden w-screen"
             />
-            <Image
+            <img
               alt={product.name}
               src={product.image.tablet}
               className="hidden md:flex lg:hidden w-screen"
@@ -110,17 +110,17 @@ const CategoryPageBanner: React.FC<productInfoProps> = ({ productInfo }) => {
         </ul>
         <ul className="ml-0 lg:ml-24 hidden lg:flex w-auto lg:w-2/4">
           <li>
-            <Image
+            <img
               src={product.image.mobile}
               className="flex md:hidden"
               alt={product.name}
             />
-            <Image
+            <img
               src={product.image.tablet}
               className="hidden md:flex lg:hidden"
               alt={product.name}
             />
-            <Image
+            <img
               src={product.image.desktop}
               className="hidden lg:flex"
               alt={product.name}

@@ -4,19 +4,19 @@ const BottomBanner = () => {
   return (
     <ul className="flex flex-col lg:flex-row justify-center lg:justify-between items-center mt-72 md:mt-20 lg:h-[35rem]">
       <li className="">
-        <Image
+        <img
           src="/assets/shared/mobile/image-best-gear.jpg"
           className="flex md:hidden rounded"
           alt="best gear"
         />
 
-        <Image
+        <img
           src="/assets/shared/tablet/image-best-gear.jpg"
           className="hidden md:flex lg:hidden rounded h-80"
           alt="best gear"
         />
 
-        <Image
+        <img
           src="/assets/shared/desktop/image-best-gear.jpg"
           className="hidden lg:flex rounded"
           alt="best gear"
