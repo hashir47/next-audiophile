@@ -263,7 +263,7 @@ const Home: React.FC<pageProps> = ({ params }) => {
           })}
         </div>
       </div>
-      <ProductCardsNav />
+      <ProductCards />
       <div className="p-10 lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl -mt-64 md:mt-0">
         <BottomBanner />
       </div>
