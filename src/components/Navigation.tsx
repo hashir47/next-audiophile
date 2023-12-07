@@ -6,10 +6,11 @@ import ProductCardsNav from "./ProductCardsNav";
 import Link from "next/link";
 import Cart from "./Cart";
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [isCartOpen, setIsCartOpen] = useState<boolean>(false);
+  const router = useRouter();
   return (
     <header className="bg-custom-dark lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl w-full z-50">
       {/* <nav className="flex flex-row justify-between border-0 lg:border-b-[1px]  p-10 border-dark-gray text-white "> */}
@@ -37,7 +38,10 @@ const Navigation = () => {
         </ul>
         <ul>
           <li>
-            <img src="/assets/shared/desktop/logo.svg" alt="audiophile" />
+            <Link href="/">
+              {" "}
+              <img src="/assets/shared/desktop/logo.svg" alt="logo" />
+            </Link>
           </li>
         </ul>
         <ul className="flex-row space-x-6 uppercase hidden lg:flex">

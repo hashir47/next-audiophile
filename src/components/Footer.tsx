@@ -1,15 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { useRouter } from "next/navigation";
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
+
   return (
     <footer className="bg-custom-dark p-10 lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl">
       <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between pb-10 text-white">
         <ul>
           <li className="my-10 md:my-0">
-            <img src="/assets/shared/desktop/logo.svg" alt="logo" />
+            <Link href="/">
+              {" "}
+              <img src="/assets/shared/desktop/logo.svg" alt="logo" />
+            </Link>
           </li>
         </ul>
         <ul className="flex flex-col md:flex-row space-x-0 space-y-4 md:space-y-0 md:space-x-6 uppercase items-center">
