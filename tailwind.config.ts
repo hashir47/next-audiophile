@@ -25,9 +25,9 @@ const config: Config = {
         'custom-padding':'40px 140px'
       },
       spacing: {
-        'custom-y': '40px', 
+        'custom-y': '20px', 
         'custom-x': '140px',
-        'custom-y-xl': '40px', 
+        'custom-y-xl': '20px', 
         'custom-x-xl': '340px',
       },
     },

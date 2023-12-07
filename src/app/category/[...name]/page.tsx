@@ -6,6 +6,7 @@ import BottomBanner from "@/components/BottomBanner";
 type productInfo = {
   name: string;
   description: string;
+  slug: string;
   image: {
     mobile: string;
     tablet: string;

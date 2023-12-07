@@ -16,13 +16,22 @@ const Footer = () => {
             <Link href="/">Home</Link>{" "}
           </li>
           <li>
-            <Link href="/category/headphones">Headphones</Link>
+            <Link
+              href="/category/headphones"
+              className="hover:text-dark-orange"
+            >
+              Headphones
+            </Link>
           </li>
           <li>
-            <Link href="/category/speakers">Speakers</Link>
+            <Link href="/category/speakers" className="hover:text-dark-orange">
+              Speakers
+            </Link>
           </li>
           <li>
-            <Link href="/category/earphones">Earphones</Link>
+            <Link href="/category/earphones" className="hover:text-dark-orange">
+              Earphones
+            </Link>
           </li>
         </ul>
       </div>
