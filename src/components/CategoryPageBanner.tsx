@@ -56,9 +56,12 @@ const CategoryPageBanner: React.FC<productInfoProps> = ({ productInfo }) => {
               <p className="text-center lg:text-start">{product.description}</p>
             </li>
             <li>
-              <button className="dark-orange-btn self-auto text-white font-medium">
-                <Link href={`/product/${product.slug}`}>SEE PRODUCT</Link>
-              </button>
+              <Link
+                className="dark-orange-btn self-auto text-white font-medium"
+                href={`/product/${product.slug}`}
+              >
+                SEE PRODUCT
+              </Link>
             </li>
           </ul>
         </div>
@@ -97,9 +100,12 @@ const CategoryPageBanner: React.FC<productInfoProps> = ({ productInfo }) => {
             <p className="text-center lg:text-start">{product.description}</p>
           </li>
           <li>
-            <button className="dark-orange-btn self-auto text-white font-medium">
+            <Link
+              className="dark-orange-btn self-auto text-white font-medium"
+              href={`/product/${product.slug}`}
+            >
               SEE PRODUCT
-            </button>
+            </Link>
           </li>
         </ul>
         <ul className="ml-0 lg:ml-24 hidden lg:flex w-auto lg:w-2/4">
