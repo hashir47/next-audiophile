@@ -5,6 +5,7 @@ import ProductCards from "./Home/ProductCards";
 import ProductCardsNav from "./ProductCardsNav";
 import Link from "next/link";
 import Cart from "./Cart";
+import Image from "next/image";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -36,7 +37,7 @@ const Navigation = () => {
         </ul>
         <ul>
           <li>
-            <img src="/assets/shared/desktop/logo.svg" />
+            <Image src="/assets/shared/desktop/logo.svg" alt="audiophile" />
           </li>
         </ul>
         <ul className="flex-row space-x-6 uppercase hidden lg:flex">
@@ -67,13 +68,14 @@ const Navigation = () => {
 
         <ul>
           <li>
-            <img
+            <Image
               className="cursor-pointer"
               src="/assets/shared/desktop/icon-cart.svg"
               onClick={(e) => {
                 e.preventDefault();
                 setIsCartOpen(!isCartOpen);
               }}
+              alt="cart"
             />
           </li>
         </ul>

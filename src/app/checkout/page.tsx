@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useDisclosure } from "@mantine/hooks";
 import { Modal, Button } from "@mantine/core";
+import Image from "next/image";
+
 type Inputs = {
   email: string;
   name: string;
@@ -238,7 +240,7 @@ const Home: React.FC = () => {
                   className="flex items-center justify-between my-4"
                 >
                   <div className="flex flex-row justify-start items-start">
-                    <img
+                    <Image
                       className="h-12 md:h-16 w-12 md:w-16"
                       src={item.image}
                       alt={item.name}

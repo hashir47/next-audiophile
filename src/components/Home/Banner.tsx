@@ -3,6 +3,8 @@ import patternCircles from "../../../public/assets/home/desktop/pattern-circles.
 import speakerZoomed from "../../../public/assets/home/desktop/speakerZoomed.png";
 import bestAudioGear from "../../../public/assets/shared/desktop/image-best-gear.jpg";
 import BottomBanner from "../BottomBanner";
+import Image from "next/image";
+
 const Banners = () => {
   return (
     <div className="flex flex-col p-10 lg:py-custom-y lg:px-custom-x  xl:py-custom-y-xl xl:px-custom-x-xl">
@@ -18,19 +20,19 @@ const Banners = () => {
           <img src="assets/home/desktop/pattern-circles.svg" alt="Circle" />
         </li> */}
         <li className="self-center lg:self-start my-10 lg:my-0">
-          <img
+          <Image
             className="hidden lg:flex"
             src="assets/home/desktop/speakerMainHome.png"
             alt="speaker-zx9"
           />
 
-          <img
+          <Image
             className="hidden md:flex lg:hidden"
             src="assets/home/tablet/image-speaker-zx9.png"
             alt="speaker-zx9"
           />
 
-          <img
+          <Image
             className="flex md:hidden"
             src="assets/home/mobile/image-speaker-zx9.png"
             alt="speaker-zx9"
@@ -81,15 +83,15 @@ const Banners = () => {
 
       <ul className="flex flex-col md:flex-row justify-between mt-20 h-48 md:h-80">
         <li>
-          <img
+          <Image
             src="assets/home/mobile/image-earphones-yx1.jpg"
             className="flex md:hidden rounded"
           />
-          <img
+          <Image
             src="assets/home/tablet/image-earphones-yx1.jpg"
             className="hidden md:flex lg:hidden  rounded h-80"
           />
-          <img
+          <Image
             src="assets/home/desktop/image-earphones-yx1.jpg"
             className="hidden lg:flex rounded h-80"
           />

@@ -1,20 +1,24 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="flex flex-row  bg-custom-dark text-white w-full p-0 lg:py-custom-y lg:px-custom-x  xl:py-custom-y-xl xl:px-custom-x-xl">
-      <img
+    <div className="flex flex-row bg-custom-dark text-white w-full p-0 lg:py-custom-y lg:px-custom-x xl:py-custom-y-xl xl:px-custom-x-xl">
+      <Image
         src="assets/home/desktop/image-hero.jpg"
         className="hidden lg:flex"
+        alt="Headphones"
       />
-      <img
+      <Image
         src="assets/home/tablet/image-header.jpg"
         className="hidden md:flex lg:hidden"
+        alt="hero banner"
       />
 
-      <img
+      <Image
         src="assets/home/mobile/image-header.jpg"
         className="flex md:hidden"
+        alt="hero banner"
       />
       <div className="flex flex-col justify-center items-center lg:items-start absolute h-full lg:h-auto w-full lg:w-2/4 p-0 lg:p-24">
         <p className="overline text-dark-gray">NEW PRODUCT</p>

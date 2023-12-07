@@ -3,6 +3,8 @@ import ProductCards from "@/components/Home/ProductCards";
 import CategoryPageBanner from "@/components/CategoryPageBanner";
 import data from "../../../../data.json";
 import BottomBanner from "@/components/BottomBanner";
+import Image from "next/image";
+
 type productInfo = {
   name: string;
   description: string;

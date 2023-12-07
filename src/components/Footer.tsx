@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -48,13 +49,22 @@ const Footer = () => {
         </ul>
         <ul className="hidden lg:flex flex-row space-x-6 uppercase self-end">
           <li>
-            <img src="/assets/shared/desktop/icon-facebook.svg" />
+            <Image
+              src="/assets/shared/desktop/icon-facebook.svg"
+              alt="facebook"
+            />
           </li>
           <li>
-            <img src="/assets/shared/desktop/icon-instagram.svg" />
+            <Image
+              src="/assets/shared/desktop/icon-instagram.svg"
+              alt="instagram"
+            />
           </li>
           <li>
-            <img src="/assets/shared/desktop/icon-twitter.svg" />
+            <Image
+              src="/assets/shared/desktop/icon-twitter.svg"
+              alt="twitter"
+            />
           </li>
         </ul>
       </div>
@@ -68,13 +78,22 @@ const Footer = () => {
         </ul>
         <ul className="flex lg:hidden flex-row space-x-6 uppercase self-center md:self-end mt-10 md:mt-0">
           <li>
-            <img src="/assets/shared/desktop/icon-facebook.svg" />
+            <Image
+              src="/assets/shared/desktop/icon-facebook.svg"
+              alt="facebook"
+            />
           </li>
           <li>
-            <img src="/assets/shared/desktop/icon-instagram.svg" />
+            <Image
+              src="/assets/shared/desktop/icon-instagram.svg"
+              alt="instagram"
+            />
           </li>
           <li>
-            <img src="/assets/shared/desktop/icon-twitter.svg" />
+            <Image
+              src="/assets/shared/desktop/icon-twitter.svg"
+              alt="twitter"
+            />
           </li>
         </ul>
       </div>

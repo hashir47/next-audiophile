@@ -1,5 +1,7 @@
 "use client";
+
 import { XMarkIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 type cartItems = {
@@ -80,7 +82,7 @@ const Cart: React.FC<cartProps> = ({ isCartOpen, setIsCartOpen }) => {
               key={`cart-item-${index}`}
               className="flex items-center justify-between my-4"
             >
-              <img
+              <Image
                 className="h-12 md:h-16 w-12 md:w-16"
                 src={item.image}
                 alt={item.name}

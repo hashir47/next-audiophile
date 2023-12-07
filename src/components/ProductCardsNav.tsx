@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 type category = {
@@ -35,12 +36,12 @@ const ProductCardsNav = () => {
                 alt={category.name}
               /> */}
 
-              <img
+              <Image
                 src={category.url}
                 className="absolute -top-20 md:-top-20 lg:-top-16"
                 alt={category.name}
               />
-              <img
+              <Image
                 src="/assets/home/desktop/Oval.png"
                 className="mt-10"
                 alt="oval shadow"
@@ -54,9 +55,10 @@ const ProductCardsNav = () => {
                 <p className="text-darker-gray subtitle">
                   <Link href={`/category/${category.name}`}>SHOP</Link>
                 </p>{" "}
-                <img
+                <Image
                   src="/assets/shared/desktop/icon-arrow-right.svg"
                   className="ml-4 w-3 h-3"
+                  alt="right-arrow"
                 />
               </div>
             </li>
